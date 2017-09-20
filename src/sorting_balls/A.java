@@ -40,7 +40,6 @@ public class A extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         value_text = new javax.swing.JTextField();
         add_btt = new javax.swing.JButton();
-        quick_sort = new javax.swing.JButton();
         bubble_sort = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -57,13 +56,6 @@ public class A extends javax.swing.JFrame {
         add_btt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 add_bttActionPerformed(evt);
-            }
-        });
-
-        quick_sort.setText("Quick_Sort");
-        quick_sort.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quick_sortActionPerformed(evt);
             }
         });
 
@@ -92,25 +84,22 @@ public class A extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(91, 91, 91)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(30, 30, 30)
-                        .addComponent(value_text, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(add_btt)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(quick_sort, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(bubble_sort)
-                        .addGap(94, 94, 94))))
+                .addComponent(jLabel1)
+                .addGap(30, 30, 30)
+                .addComponent(value_text, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(add_btt)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 24, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(bubble_sort)
+                .addGap(180, 180, 180))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,11 +111,9 @@ public class A extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(value_text, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(add_btt))
-                .addGap(78, 78, 78)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(quick_sort)
-                    .addComponent(bubble_sort))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addComponent(bubble_sort)
+                .addGap(44, 44, 44)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -150,15 +137,6 @@ public class A extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_add_bttActionPerformed
-
-    private void quick_sortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quick_sortActionPerformed
-        rack.quick_sort(0,rack.getBalls().size());
-        aux.setColumnCount(0);
-        for( int i = 0; i< rack.getBalls().size(); i++){
-            aux.addColumn(rack.getBalls().get(i));
-        }
-        // TODO add your handling code here:
-    }//GEN-LAST:event_quick_sortActionPerformed
 
     private void bubble_sortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bubble_sortActionPerformed
         // TODO add your handling code here:
@@ -211,7 +189,6 @@ public class A extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JButton quick_sort;
     private javax.swing.JTextField value_text;
     // End of variables declaration//GEN-END:variables
 }
