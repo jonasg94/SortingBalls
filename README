@@ -1,6 +1,9 @@
 Sorting Balls
 
-Usei o algoritmo Bubble Sort que mantém a ordem dos elementos pela que foram introduzidos (em caso de haver números repetidos). 
+Usei dois algoritmos de ordenação. 
+O algoritmo Bubble Sort que mantém a ordem dos elementos pela que foram introduzidos (em caso de haver números repetidos). 
+O algoritmo Quick Sort que  não mantém a ordem dos elementos pela que foram introduzidos, e é um algoritmo  de orndenação 
+rápido, usando uma função recursiva.
 Esta aplicação não permite introduzir números negativos, nem positivos maior es que 59 e também não aceita números negativos.
 
 Realizei uma pequena interface gráfica, para ser mais visivél a ordenação do array.
