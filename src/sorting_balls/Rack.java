@@ -64,20 +64,20 @@ public class Rack {
     public void quick_sort(int low, int high){
         // ordenamento de frorma recursiva usando o algoritmo quick_sort
         int i = low, j = high;
-        
+
         int pivot = balls.get(low + (high-low)/2);
         //pegamos no valor do meio para nao cairmos no pior caso do quick_sort que é quanto o array esta ordenado ou inversamente ordenado 
-        
+   
         while(i <= j){
                 while (balls.get(i) < pivot) {
 				i++;
 			}
- 
+    
 			while (balls.get(j) > pivot) {
 				j--;
-			}
+}
  
-			if (i<j) {
+			if (i<=j) {
 				int temp = balls.get(i);
                                 balls.set(i,balls.get(j));
                                 balls.set(j, temp);
