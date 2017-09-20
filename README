@@ -1,0 +1,8 @@
+Sorting Balls
+
+Usei o algoritmo Bubble Sort que mantém a ordem dos elementos pela que foram introduzidos (em caso de haver números repetidos). 
+Esta aplicação não permite introduzir números negativos, nem positivos maior es que 59 e também não aceita números negativos.
+
+Realizei uma pequena interface gráfica, para ser mais visivél a ordenação do array.
+
+Projeto desenvolvido por : João Gomes
